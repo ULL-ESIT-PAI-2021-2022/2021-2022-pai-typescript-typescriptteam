@@ -1,6 +1,6 @@
 # Bibliography
 
-Include in this directory all references and additional material used in your project
+All references and additional material used in our project
 
 * [Tutorial TS](https://www.typescripttutorial.net/)
 * [Presentation TS](http://oak.cs.ucla.edu/classes/cs144/slides/typescript.html#/)
