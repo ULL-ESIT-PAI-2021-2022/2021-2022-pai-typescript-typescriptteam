@@ -2,7 +2,7 @@
 
 /**
  * @param {number} value 
- * @returns 
+ * @returns string
  */
 export function classify(value) {
   if ((value <= 0) || (value % 1 != 0)) {

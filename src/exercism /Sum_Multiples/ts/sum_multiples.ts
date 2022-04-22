@@ -1,7 +1,7 @@
 /**
- * @param divisors 
- * @param limit 
- * @returns 
+ * @param {number[]} divisors 
+ * @param {number} limit 
+ * @returns number
  */
 export function sum(divisors: number[], limit: number): number {
   return divisors.reduce((result: number[], divisor: number) => {

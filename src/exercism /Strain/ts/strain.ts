@@ -1,14 +1,14 @@
 /**
- * 
+ * Interface made to specify the 'form' of the function
  */
 interface funcFormat {
   (number: number): boolean
 }
 
 /**
- * @param {*} array 
- * @param {*} func 
- * @returns 
+ * @param {number[]} array 
+ * @param {function} func 
+ * @returns number[]
  */
 export function keep(array: number[], func: funcFormat): number[] {
   let result: number[] = []
@@ -21,9 +21,9 @@ export function keep(array: number[], func: funcFormat): number[] {
 };
 
 /**
- * @param {*} array 
- * @param {*} func 
- * @returns 
+ * @param {number[]} array 
+ * @param {function} func 
+ * @returns number[]
  */
 export function discard(array: number[], func: funcFormat): number[] {
   return keep(array, item => !func(item));

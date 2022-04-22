@@ -1,6 +1,6 @@
 /**
  * @param {number} value 
- * @returns 
+ * @returns string
  */
 export function classify(value: number): string {
   if ((value <= 0) || (value % 1 != 0)) {

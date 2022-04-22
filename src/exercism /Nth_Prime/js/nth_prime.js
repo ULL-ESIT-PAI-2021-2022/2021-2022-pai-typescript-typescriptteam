@@ -1,8 +1,8 @@
 'use strict';
 
 /**
- * @param {*} number 
- * @returns 
+ * @param {number} number 
+ * @returns boolean
  */
 function isPrime(number) {
   for (let itr = 2; itr <= Math.sqrt(number); itr++) {
@@ -14,8 +14,8 @@ function isPrime(number) {
 };
 
 /**
- * @param {*} nth 
- * @returns 
+ * @param {number} nth 
+ * @returns number
  */
 export function prime(nth) {
   if (nth === 0) {

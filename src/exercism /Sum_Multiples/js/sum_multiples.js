@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * @param divisors 
- * @param limit 
- * @returns 
+ * @param {number[]} divisors 
+ * @param {number} limit 
+ * @returns number
  */
 export function sum(divisors, limit) {
   return divisors.reduce((result, divisor) => {

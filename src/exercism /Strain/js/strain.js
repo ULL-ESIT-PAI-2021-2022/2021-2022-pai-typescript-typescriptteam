@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * @param {*} array 
- * @param {*} func 
- * @returns 
+ * @param {number[]} array 
+ * @param {function} func 
+ * @returns number[]
  */
 export function keep(array, func) {
   let result = []
@@ -16,9 +16,9 @@ export function keep(array, func) {
 };
 
 /**
- * @param {*} array 
- * @param {*} func 
- * @returns 
+ * @param {number[]} array 
+ * @param {function} func 
+ * @returns number[]
  */
 export function discard(array, func) {
   return keep(array, item => !func(item));

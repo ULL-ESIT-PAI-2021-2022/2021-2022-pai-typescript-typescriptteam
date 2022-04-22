@@ -1,8 +1,8 @@
 'use strict';
 
 /**
- * @param {*} number 
- * @returns 
+ * @param {number} number 
+ * @returns number[]
  */
 export function primeFactors(number) {
   let primeFactorsOfNum = [];
