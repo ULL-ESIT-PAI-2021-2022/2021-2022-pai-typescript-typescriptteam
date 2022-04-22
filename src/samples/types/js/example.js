@@ -11,7 +11,6 @@ function testJS() {
   let tuple;
   let union;
   let inaccessible;
-  let obj;
 
   console.log(typeof(unknown));
   console.log(typeof(num));
@@ -21,10 +20,13 @@ function testJS() {
   console.log(typeof(tuple));
   console.log(typeof(union));
   console.log(typeof(inaccessible));
-  console.log(typeof(obj));
 
   //Checking functions
   console.log('You can see that when it is not initialized the variable type is unknown:\n');
+  
+  let obj;
+  console.log(typeof(obj));
+
   function hello(name) {
     console.log(`Hello, ${name}!`);
   }

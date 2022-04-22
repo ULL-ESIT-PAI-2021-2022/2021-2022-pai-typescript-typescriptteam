@@ -21,19 +21,42 @@ function testTS(): void {
   console.log(typeof(union));
   //console.log(typeof(inaccessible)); you can't output a never type.
 
-  //Checking functions
+  //Checking functions and objects
+  console.log('Functions and objects:\n');
   let obj: {num: number, str: string} = {num: 1, str: 'example'};
 
   console.log(typeof(obj));
 
-  function hi(name: string): void {
+  function hello(name: string): void {
       console.log(`Hello, ${name}!`);
   }
 
   let sayHiTo: (x: string) => void;
-  sayHiTo = hi;
+  sayHiTo = hello;
   console.log(typeof(sayHiTo));
   console.log(sayHiTo("Sande"));
+
+  let inferedA = 1;
+  let inferedString = 'String';
+
+  console.log(`Type of inferedA: ${typeof inferedA}`);
+  console.log(`Type of inferedString: ${typeof inferedString}`);
+
+  let employee: {
+    firstName: string;
+    lastName: string;
+    age: number;
+    jobTitle: string;
+  } = {
+      firstName: 'John',
+      lastName: 'Doe',
+      age: 25,
+      jobTitle: 'Web Developer'
+  };
+
+  console.log(employee.firstName);
+  console.log(employee.firstName + ' ' + employee.lastName);
+
   /*This next line produces an error*/
   //num = 'hola';
 }
