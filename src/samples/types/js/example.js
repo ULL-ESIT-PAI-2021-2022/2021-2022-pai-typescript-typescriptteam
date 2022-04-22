@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 function testJS() {
   //Checking the unknown type of this variables
@@ -39,7 +39,9 @@ function testJS() {
   //Checking it works fine
   console.log('\nYou can set diferent type of value to the same variable');
   num = 2;
-  console.log('num= ' + toString(num) + ' y es de tipo: ' + typeof(num));
+  console.log('num= ' + num + ' y es de tipo: ' + typeof(num));
   num = 'hola';
   console.log('num= ' + num + ' y es de tipo: ' + typeof(num));
 }
+
+testJS();

@@ -1,7 +1,6 @@
 /**
- *
- *
- *
+ * @param {number} number 
+ * @returns number
  */
 export function steps(number: number): number {
   if (number <= 0) {

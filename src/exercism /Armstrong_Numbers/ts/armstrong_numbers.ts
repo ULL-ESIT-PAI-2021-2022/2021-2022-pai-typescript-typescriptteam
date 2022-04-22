@@ -1,6 +1,6 @@
 /**
- * @param {*} number 
- * @returns 
+ * @param {number} number 
+ * @returns boolean
  */
 export function isArmstrongNumber(number: number): boolean {
   let numberArray: string[] = number.toString().split('');

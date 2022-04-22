@@ -1,8 +1,8 @@
 'use strict';
 
 /**
- * @param {*} str 
- * @returns 
+ * @param {string} str 
+ * @returns boolean
  */
 export function isValid(str) {
   let arr = str.split("-").join("").split("");
@@ -17,5 +17,5 @@ export function isValid(str) {
 
   let value = arr.reduce((result, element, iter) => result + element * (10 - iter), 0);
 
-	return (value % 11 == 0);
+	return (value % 11 === 0);
 };

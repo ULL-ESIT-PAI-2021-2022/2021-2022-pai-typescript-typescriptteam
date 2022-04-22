@@ -1,9 +1,8 @@
 'use strict';
 
 /**
- *
- *
- *
+ * @param {number} number 
+ * @returns number
  */
 export function steps (number) {
   if (number <= 0) {

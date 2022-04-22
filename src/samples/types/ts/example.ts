@@ -1,14 +1,14 @@
-function testTS() {
-  //Checking the unknown type of this variables
+function testTS(): void {
+  //Checking the unknown type of this variables. You must set each variable to something in order to typeof it.
   console.log('You can see all of them have a different type:\n');
-  let unknown;
+  let unknown = undefined;
   let unknown2: any;
-  let num: number;
-  let str: string;
-  let bool: boolean;
-  let numbersArray: number[];
-  let tuple: [number, string];
-  let union: (number | string);
+  let num: number = 0;
+  let str: string = 'example';
+  let bool: boolean = true;
+  let numbersArray: number[] = [1,2,3];
+  let tuple: [number, string] = [1, 'example'];
+  let union: (number | string) = 1;
   let inaccessible: never;
 
   console.log(typeof(unknown));
@@ -19,11 +19,10 @@ function testTS() {
   console.log(typeof(numbersArray));
   console.log(typeof(tuple));
   console.log(typeof(union));
-  console.log(typeof(inaccessible));
+  //console.log(typeof(inaccessible)); you can't output a never type.
 
   //Checking functions
-  console.log('You can see that when the variable is already defined, it shows the only one type:\n');
-  let obj: {num: number, str: string};
+  let obj: {num: number, str: string} = {num: 1, str: 'example'};
 
   console.log(typeof(obj));
 
@@ -32,11 +31,9 @@ function testTS() {
   }
 
   let sayHiTo: (x: string) => void;
-  console.log(typeof(sayHiTo));
   sayHiTo = hi;
   console.log(typeof(sayHiTo));
   console.log(sayHiTo("Sande"));
-
   /*This next line produces an error*/
   //num = 'hola';
 }

@@ -1,6 +1,6 @@
 /**
- * @param {*} str 
- * @returns 
+ * @param {string} str 
+ * @returns boolean
  */
 export function isValid(str: string): boolean {
   let arr: string[] = str.split("-").join("").split("");

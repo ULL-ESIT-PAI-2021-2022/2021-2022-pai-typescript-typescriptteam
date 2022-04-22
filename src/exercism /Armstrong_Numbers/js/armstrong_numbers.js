@@ -1,8 +1,8 @@
 'use strict';
 
 /**
- * @param {*} number 
- * @returns 
+ * @param {number} number 
+ * @returns boolean
  */
 export function isArmstrongNumber(number) {
   let numberArray = number.toString().split('');
