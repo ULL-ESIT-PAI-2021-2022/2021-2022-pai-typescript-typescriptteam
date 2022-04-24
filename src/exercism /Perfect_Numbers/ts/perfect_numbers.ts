@@ -1,6 +1,7 @@
 /**
- * @param {number} value 
- * @returns string
+ * @desc Classify the value due to divisors
+ * @param {number} value Value to be classified
+ * @returns string defining the classification
  */
 export function classify(value: number): string {
   if ((value <= 0) || (value % 1 != 0)) {

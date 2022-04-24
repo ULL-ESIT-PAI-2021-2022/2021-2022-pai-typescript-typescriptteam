@@ -6,9 +6,10 @@ interface funcFormat {
 }
 
 /**
- * @param {number[]} array 
- * @param {function} func 
- * @returns number[]
+ * @desc Function that returns the elements that passes the filter func
+ * @param {number[]} array Numbers to be parsed
+ * @param {function} func Function to filter
+ * @returns number[] with the filtered numbers
  */
 export function keep(array: number[], func: funcFormat): number[] {
   let result: number[] = []
@@ -21,9 +22,10 @@ export function keep(array: number[], func: funcFormat): number[] {
 };
 
 /**
- * @param {number[]} array 
- * @param {function} func 
- * @returns number[]
+ * @desc Function that returns the elements that didnt passes the filter func
+ * @param {number[]} array Numbers to be parsed
+ * @param {function} func Function to filter
+ * @returns number[] with the filtered numbers
  */
 export function discard(array: number[], func: funcFormat): number[] {
   return keep(array, item => !func(item));

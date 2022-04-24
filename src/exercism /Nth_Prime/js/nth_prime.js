@@ -1,8 +1,9 @@
 'use strict';
 
 /**
- * @param {number} number 
- * @returns boolean
+ * @desc Checks if a number is prime
+ * @param {number} number Number to be checked
+ * @returns boolean True if it is, false if not
  */
 function isPrime(number) {
   for (let itr = 2; itr <= Math.sqrt(number); itr++) {
@@ -14,8 +15,9 @@ function isPrime(number) {
 };
 
 /**
- * @param {number} nth 
- * @returns number
+ * @desc Give the nth prime number
+ * @param {number} nth The position of that number
+ * @returns The number
  */
 export function prime(nth) {
   if (nth === 0) {

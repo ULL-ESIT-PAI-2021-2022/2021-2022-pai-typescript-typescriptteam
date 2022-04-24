@@ -1,9 +1,10 @@
 'use strict';
 
 /**
- * @param {number[]} divisors 
- * @param {number} limit 
- * @returns number
+ * @desc Give the sum of multiples into an array from index 0 to limit
+ * @param {number[]} divisors Array of numbers that are divisors
+ * @param {number} limit Limit to check
+ * @returns number that is the sum of the multiples
  */
 export function sum(divisors, limit) {
   return divisors.reduce((result, divisor) => {

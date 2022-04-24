@@ -1,8 +1,9 @@
 'use strict';
 
 /**
- * @param {string} str 
- * @returns boolean
+ * @desc Checks if the ticket is valid
+ * @param {string} str With the ticket id
+ * @returns boolean true if it is valid or false if it is not
  */
 export function isValid(str) {
   let arr = str.split("-").join("").split("");

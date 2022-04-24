@@ -1,6 +1,7 @@
 /**
- * @param {number} number 
- * @returns number[]
+ * @desc Give the prime factors of the gived number
+ * @param {number} number To be taked the prime factors
+ * @returns number[] with the prime factors of the gived number
  */
 export function primeFactors(number: number): number[] {
   let primeFactorsOfNum: number[] = [];

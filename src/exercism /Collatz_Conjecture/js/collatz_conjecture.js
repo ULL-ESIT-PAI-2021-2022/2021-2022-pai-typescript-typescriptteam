@@ -1,8 +1,9 @@
 'use strict';
 
 /**
- * @param {number} number 
- * @returns number
+ * @desc Give the number of steps to number be 1
+ * @param {number} number Number of steps to be done
+ * @returns number of steps
  */
 export function steps (number) {
   if (number <= 0) {

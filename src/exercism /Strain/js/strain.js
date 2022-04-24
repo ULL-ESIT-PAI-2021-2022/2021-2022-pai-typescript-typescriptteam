@@ -1,9 +1,10 @@
 'use strict';
 
 /**
- * @param {number[]} array 
- * @param {function} func 
- * @returns number[]
+ * @desc Function that returns the elements that passes the filter func
+ * @param {number[]} array Numbers to be parsed
+ * @param {function} func Function to filter
+ * @returns number[] with the filtered numbers
  */
 export function keep(array, func) {
   let result = []
@@ -16,9 +17,10 @@ export function keep(array, func) {
 };
 
 /**
- * @param {number[]} array 
- * @param {function} func 
- * @returns number[]
+ * @desc Function that returns the elements that didnt passes the filter func
+ * @param {number[]} array Numbers to be parsed
+ * @param {function} func Function to filter
+ * @returns number[] with the filtered numbers
  */
 export function discard(array, func) {
   return keep(array, item => !func(item));
