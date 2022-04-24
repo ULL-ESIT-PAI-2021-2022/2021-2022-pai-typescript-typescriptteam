@@ -4,9 +4,7 @@
   },
 
   "scripts": {
-    "types": "ts-node ./src/samples/types/types.ts",
-    "interfaces": "ts-node ./src/samples/interfaces/interfaces.ts",
-    "classes": "ts-node ./src/samples/classes/classes.ts",
-    "go-to-others": "cd ./src/samples/others && ls"
+    "types": "ts-node ./src/examples/types/types.ts",
+    "interfaces": "ts-node ./src/examples/interfaces/interfaces.ts"
   }
 }

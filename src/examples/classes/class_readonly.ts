@@ -2,11 +2,11 @@
 // Names are not representative and are a single letter or alike to keep it simple and easy to read!
 
 class PersonV3 {
-  public firstName: string = undefined;
-  public lastName: string = undefined;
-  private age: number = undefined;
-  readonly dni: number = undefined;
-    
+  public firstName: string;
+  public lastName: string;
+  private age: number;
+  readonly dni: number;
+
   constructor(firstName: string, lastName: string, age: number, dni: number) {
     this.firstName = firstName;
     this.lastName = lastName;
@@ -36,6 +36,7 @@ class PersonV3 {
   }
 
   /*
+  * This won't work as it's readonly!
   set dni_(dni: number) {
     this.dni = dni;
   }*/
@@ -43,10 +44,10 @@ class PersonV3 {
 
 //Creating an instance of Person class and modify the values of public attributes
   let person3: PersonV3 = new PersonV3("Jorge", "Quintana", 22, 43465921);
-    
+
   person3.firstName = "Guille";
   console.log(person3.firstName);
-    
+
   person3.lastName = "Zafra";
   console.log(person3.lastName);
 

@@ -9,17 +9,17 @@
 
 //Function assigned to a string variable
   let resultStr: string = getNetPrice(100, 0.05, true) as string;
-  console.log("El tipo es:", typeof(resultStr), "y vale:", resultStr);
+  console.log("The type is:", typeof(resultStr), "and it's value is:", resultStr);
 
 //Function assigned to a number variable
   let resultNum: number = getNetPrice(100, 0.05, false) as number;
-  console.log("\nEl tipo es:", typeof(resultNum), "y vale:", resultNum);
+  console.log("\nThe type is:", typeof(resultNum), "and it's value is:", resultNum);
 
 //Function assigned to a typed (number | string) variable
   let resultBothTypes: number | string;
 
   resultBothTypes = getNetPrice(100, 0.05, true) as string;
-  console.log("\nEl tipo es:", typeof(resultBothTypes), "y vale:", resultBothTypes);
+  console.log("\nThe type is:", typeof(resultBothTypes), "and it's value is:", resultBothTypes);
 
   resultBothTypes = getNetPrice(100, 0.05, false) as number;
-  console.log("El tipo es:", typeof(resultBothTypes), "y vale:", resultBothTypes);
+  console.log("The type is:", typeof(resultBothTypes), "and it's value is:", resultBothTypes);

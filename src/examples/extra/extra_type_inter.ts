@@ -1,5 +1,8 @@
 // DISCLAIMER: We don't follow any code standard here. This is just a sample.
 // Names are not representative and are a single letter or alike to keep it simple and easy to read!
+/**
+ * @see https://simondosda.github.io/posts/2021-06-17-interface-property-type.html
+ */
 
 //Employee
 interface Identity {
@@ -25,8 +28,9 @@ let employee1: Employee = {
 
 //Function that shows all the properties of an employee and it is value
 function lookAtEmployeeTypeData(employee: Employee) {
-  for (let element in employee) {
-    console.log("\t-", element.toUpperCase(), "is", employee[element]);
+  let elementEmployee: keyof Employee;
+  for (elementEmployee in employee) {
+    console.log("\t-", elementEmployee.toUpperCase(), "is", employee[elementEmployee]);
   }
 }
 
@@ -52,8 +56,9 @@ let customer1: Customer = {
 
 //Function that shows all the properties of a customer and it is value
 function lookAtCustomerTypeData(customer: Customer) {
-  for (let element in customer) {
-    console.log("\t-", element.toUpperCase(), "is", customer[element]);
+  let elementCustomer: keyof Customer;
+  for (elementCustomer in customer) {
+    console.log("\t-", elementCustomer.toUpperCase(), "is", customer[elementCustomer]);
   }
 }
 
@@ -77,8 +82,9 @@ let identifiedCustomer1: IdentifiedCustomer = {
 
 //Function that shows all the properties of a identified customer and it is value
 function lookAtIdentifiedCustomerTypeData(customer: IdentifiedCustomer) {
-  for (let element in customer) {
-    console.log("\t-", element.toUpperCase(), "is", customer[element]);
+  let identifiedCostumerElement: keyof IdentifiedCustomer;
+  for (identifiedCostumerElement in customer) {
+    console.log("\t-", identifiedCostumerElement.toUpperCase(), "is", customer[identifiedCostumerElement]);
   }
 }
 

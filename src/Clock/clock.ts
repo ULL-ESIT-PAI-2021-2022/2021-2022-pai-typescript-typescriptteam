@@ -5,8 +5,9 @@
  * Programación de Aplicaciones Interactivas
  *
  * @author F. de Sande
- * @since 20.feb.2020, 26.02.2021
- * @version 2
+ * @author Jorge Quintana García
+ * @since 20.feb.2020, 26.02.2021, 24.04.2022
+ * @version 3
  * @desc ES6 Object Oriented Analog Canvas based Clock
  * @tutorial Adapted from {@link https://www.w3schools.com/graphics/canvas_clock.asp}
  * Also, check out {@link https://gist.github.com/fixiecoder/a6146501aaa8ad3bf885fa30a66ba079}
@@ -15,7 +16,7 @@
  * We adapted it to TypeScript so it works.
  */
 
- interface Hand {
+interface Hand {
   length: number;
   color: string;
   width: number;
@@ -41,7 +42,7 @@ class Clock {
   private hands: Hands = undefined;
   private canvas: HTMLCanvasElement = document.createElement("CANVAS") as HTMLCanvasElement;  // Creates A new HTML element: a canvas
   private ctx: CanvasRenderingContext2D = this.canvas.getContext('2d');
-  
+
   /**
    * Create a clock
    * @constructor

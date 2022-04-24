@@ -25,17 +25,17 @@ interface BasketPlayer extends Person {
   };
   //person_1.age = 20; //Produce an error because the Person interface do not have age property
 
-  console.log("Persona 1 es igual a:", person_1);
+  console.log("Person 1 is:", person_1);
 
 //Person that works as Police man
   let person_2: PoliceMan = person_1 as PoliceMan;
   person_2.licensePlateNumber = 505161681;
 
-  console.log("\nPersona 2 es igual a:", person_2);
+  console.log("\nPerson 2 is:", person_2);
 
 //Person that works as basketball player
   let person_3: BasketPlayer = person_1 as BasketPlayer;
   person_3.height = 185;
   person_3.weight = 75;
 
-  console.log("\nPersona 3 es igual a:", person_3);
+  console.log("\nPerson 3 is:", person_3);

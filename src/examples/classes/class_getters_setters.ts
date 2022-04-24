@@ -2,9 +2,9 @@
 // Names are not representative and are a single letter or alike to keep it simple and easy to read!
 
 class PersonV2 {
-  public firstName: string = undefined;
-  public lastName: string = undefined;
-  private age: number = undefined;
+  public firstName: string;
+  public lastName: string;
+  private age: number;
     
   constructor(firstName: string, lastName: string, age: number) {
     this.firstName = firstName;

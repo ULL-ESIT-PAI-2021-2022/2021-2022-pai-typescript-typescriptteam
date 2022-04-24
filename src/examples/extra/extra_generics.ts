@@ -8,7 +8,7 @@
   }
 
   let numbers1: number[] = [1, 5, 7, 4, 2, 9];
-  console.log("Elemento aleatorio del array de numeros:", getRandomNumberElement(numbers1));
+  console.log("Random number from the number array:", getRandomNumberElement(numbers1));
 
 //Random string from array of string
   function getRandomStringElement(items: string[]): string {
@@ -17,7 +17,7 @@
   }
 
   let colors1: string[] = ['red', 'green', 'blue'];
-  console.log("\nElemento aleatorio del array de strings:", getRandomStringElement(colors1));
+  console.log("\nRandom string from the string array:", getRandomStringElement(colors1));
 
 //Random element from array of elements using GENERICS
   function getRandomElement<T>(items: T[]): T {
@@ -26,9 +26,9 @@
   }
 
   let numbers2: number[] = [1, 5, 7, 4, 2, 9];
-  console.log("\nElemento aleatorio del array de elementos:", getRandomElement<number>(numbers2));
-  console.log("Elemento aleatorio con tipo inferido del array de elementos:", getRandomElement(numbers2));
+  console.log("\nRandom element from the array:", getRandomElement<number>(numbers2));
+  console.log("Random element with inferred type from the element array:", getRandomElement(numbers2));
 
   let colors2: string[] = ['red', 'green', 'blue'];
-  console.log("\nElemento aleatorio del array de elementos:", getRandomElement<string>(colors2));
-  console.log("Elemento aleatorio con tipo inferido del array de elementos:", getRandomElement(colors2));
+  console.log("\nRandom element from the array:", getRandomElement<string>(colors2));
+  console.log("Random element with inferred type from the element array:", getRandomElement(colors2));
