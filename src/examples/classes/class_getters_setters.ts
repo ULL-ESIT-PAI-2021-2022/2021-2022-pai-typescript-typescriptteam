@@ -27,7 +27,7 @@ class PersonV2 {
   }
 } 
 
-//Creamos instancia de la clase Person y modificamos los valores de los atributos publicos
+//Creating an instance of Person class and modify the values of public attributes
   let person2: PersonV2 = new PersonV2("Jorge", "Quintana", 22);
     
   person2.firstName = "Guille";
@@ -36,12 +36,12 @@ class PersonV2 {
   person2.lastName = "Zafra";
   console.log(person2.lastName);
 
-//Intentamos hacer lo mismo con atributo privado y falla
+//We try to do the same with private attribute
   
-  //person2.age = 23; //Produce un error al acceder
-  //console.log(person2.age); //Produce un error al acceder
+  //person2.age = 23; //Produce an error accessing
+  //console.log(person2.age); //Produce an error accessing
 
-//Accedemos a traves de los getter y los setter
+//Access through getter and setter
   
-  person2.age_ = 23; //Usa el setter de age
-  console.log(person2.age_); //Usa el getter de age
+  person2.age_ = 23; //Using the setter
+  console.log(person2.age_); //Using the getter

@@ -1,21 +1,21 @@
 // DISCLAIMER: We don't follow any code standard here. This is just a sample.
 // Names are not representative and are a single letter or alike to keep it simple and easy to read!
 
-//Funcion que devuelve el precio descontado en formato numero o formato string
+//Function that returns the discount price in string or number format
   function getNetPrice(price: number, discount: number, format: boolean): number | string {
     let netPrice: number = price * (1 - discount);
     return format ? `$${netPrice}` : netPrice;
   }
 
-//Funcion asignada a una variable de tipo string
+//Function assigned to a string variable
   let resultStr: string = getNetPrice(100, 0.05, true) as string;
   console.log("El tipo es:", typeof(resultStr), "y vale:", resultStr);
 
-//Funcion asignada a una variable de tipo number
+//Function assigned to a number variable
   let resultNum: number = getNetPrice(100, 0.05, false) as number;
   console.log("\nEl tipo es:", typeof(resultNum), "y vale:", resultNum);
 
-//Funcion asignada a una variable de tipo (number | string)
+//Function assigned to a typed (number | string) variable
   let resultBothTypes: number | string;
 
   resultBothTypes = getNetPrice(100, 0.05, true) as string;

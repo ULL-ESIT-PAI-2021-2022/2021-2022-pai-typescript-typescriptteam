@@ -1,7 +1,7 @@
 // DISCLAIMER: We don't follow any code standard here. This is just a sample.
 // Names are not representative and are a single letter or alike to keep it simple and easy to read!
 
-//Empleado
+//Employee
 interface Identity {
   id: number;
   name: string;
@@ -15,15 +15,15 @@ interface Contact {
 type Employee = Identity & Contact;
 
 let employee1: Employee = {
-  //Variables de la interfaz Identity
+  //Identity interface properties
     id: 0,
     name: "Jorge",
-  //Variables de la interfaz Contact
+  //Contact interface properties
     email: "alu0101123547@ull.edu.es",
     phone: "612345678"
 };
 
-//Funcion que muestra todas las propiedades de un Empleado y su valor actual
+//Function that shows all the properties of an employee and it is value
 function lookAtEmployeeTypeData(employee: Employee) {
   for (let element in employee) {
     console.log("\t-", element.toUpperCase(), "is", employee[element]);
@@ -33,7 +33,7 @@ function lookAtEmployeeTypeData(employee: Employee) {
 console.log("Employee:");
 lookAtEmployeeTypeData(employee1);
 
-//Cliente
+//Customer
 interface BusinessPartner {
   name: string;
   credit: number;
@@ -42,15 +42,15 @@ interface BusinessPartner {
 type Customer = BusinessPartner & Contact;
 
 let customer1: Customer = {
-  //Variables de la interfaz BusinessPartner
+  //BusinessPartner interface properties
     name: "Guille",
     credit: 502834714,
-  //Variables de la interfaz Contact
+  //Contact interface properties
     email: "alu0101353647@ull.edu.es",
     phone: "656789123"
 };
 
-//Funcion que muestra todas las propiedades de un Cliente y su valor actual
+//Function that shows all the properties of a customer and it is value
 function lookAtCustomerTypeData(customer: Customer) {
   for (let element in customer) {
     console.log("\t-", element.toUpperCase(), "is", customer[element]);
@@ -60,22 +60,22 @@ function lookAtCustomerTypeData(customer: Customer) {
 console.log("\nCustomer:");
 lookAtCustomerTypeData(customer1);
 
-//Varias interfaces y una misma propiedad repetida
+//Identified Customer
 type IdentifiedCustomer = Identity & BusinessPartner & Contact;
 
 let identifiedCustomer1: IdentifiedCustomer = {
-  //Variables de la interfaz Identity
+  //Identity interface properties
     id: 5001,
     name: "Pepe",
-  //Variables de la interfaz BusinessPartner
-    //name: "Jorge", //Error porque solo lo necesita una vez
+  //BusinessPartner interface properties
+    //name: "Jorge", //Error because is only needed once
     credit: 118136168,
-  //Variables de la interfaz Contact
+  //Contact interface properties
     email: "pepe@ull.edu.es",
     phone: "678912345"
 };
 
-//Funcion que muestra todas las propiedades de un Cliente Identificado y su valor actual
+//Function that shows all the properties of a identified customer and it is value
 function lookAtIdentifiedCustomerTypeData(customer: IdentifiedCustomer) {
   for (let element in customer) {
     console.log("\t-", element.toUpperCase(), "is", customer[element]);

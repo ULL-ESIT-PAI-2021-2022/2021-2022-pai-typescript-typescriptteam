@@ -1,10 +1,10 @@
 // DISCLAIMER: We don't follow any code standard here. This is just a sample.
 // Names are not representative and are a single letter or alike to keep it simple and easy to read!
 
-//Creamos un tipo que pueda ser tanto string como number
+//Creating a type that is string and number
 type alphanumeric = string | number;
 
-//Funcion que suma o concatena los parametros de entrada dependiendo de si son strings o numbers
+//Function that make the sum of two numbers or the concatenation of two strings
 function add(a: alphanumeric, b: alphanumeric) {
   if (typeof a === 'number' && typeof b === 'number') {
     return a + b;
@@ -17,19 +17,19 @@ function add(a: alphanumeric, b: alphanumeric) {
   throw new Error('Invalid arguments. Both arguments must be either numbers or strings.');
 }
 
-//Sumando dos numeros
+//Sum of two numbers
   let a: alphanumeric = 1;
   let b: alphanumeric = 2;
 
   console.log("La suma de dos variables alfanumericas asignandoles un numero da:", add(a, b));
 
-//Concatenando dos cadenas
+//Concatenation of two strings
   a = "He";
   b = "llo";
 
   console.log("La suma de dos variables alfanumericas asignandoles una string da:", add(a, b));
 
-//Produciendo un error
+//Producing an error
   a = "He";
   b = 2;
 

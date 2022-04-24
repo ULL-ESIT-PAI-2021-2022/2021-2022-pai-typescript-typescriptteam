@@ -41,7 +41,7 @@ class PersonV3 {
   }*/
 }
 
-//Creamos instancia de la clase Person y modificamos los valores de los atributos publicos
+//Creating an instance of Person class and modify the values of public attributes
   let person3: PersonV3 = new PersonV3("Jorge", "Quintana", 22, 43465921);
     
   person3.firstName = "Guille";
@@ -50,15 +50,15 @@ class PersonV3 {
   person3.lastName = "Zafra";
   console.log(person3.lastName);
 
-//Intentamos hacer lo mismo con atributo privado y falla
+///We try to do the same with private attribute
   
-  //person3.age = 23; //Produce un error al acceder
-  //console.log(person3.age); //Produce un error al acceder
+  //person3.age = 23; //Produce an error accessing
+  //console.log(person3.age); //Produce an error accessing
 
-//Accedemos a traves de los getter y los setter
+//Access through getter and setter
   
-  console.log(person3.age_); //Usa el getter de age
+  console.log(person3.age_); //Using age getter
 
-  //person3.dni = 23; //Produce un error al modificar
-  //person3.dni_ = 23; //Produce un error al modificar porque no puedes definir el setter de una variable readOnly
-  console.log(person3.dni); //No produce error al leer
+  //person3.dni = 23; //Produce an error modifying
+  //person3.dni_ = 23; //Produce an error modifying because you can not define the setter of a readOnly variable
+  console.log(person3.dni); //No errors
