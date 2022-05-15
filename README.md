@@ -6,3 +6,4 @@ This directory is organised as follows:
       ├── bib          # Presentation bibliography and references
       ├── slides       # Slides of presentation
       ├── src          # Source code
+      ├── notion       # Notion, PDF-version

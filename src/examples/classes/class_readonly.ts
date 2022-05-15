@@ -63,3 +63,4 @@ class PersonV3 {
   //person3.dni = 23; //Produce an error modifying
   //person3.dni_ = 23; //Produce an error modifying because you can not define the setter of a readOnly variable
   console.log(person3.dni); //No errors
+
